@@ -1,0 +1,107 @@
+/* Top section with machine image */
+.top-section {
+  background-color: #333;
+  padding: 40px 0;
+  text-align: center;
+}
+
+.machine-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Features section (AI, IoT, Analytics) */
+.features-section {
+  display: flex;
+  justify-content: space-around;
+  padding: 50px 0;
+  background-color: #f4f4f4;
+  gap: 20px; /* Gap between features for better spacing */
+}
+
+.feature {
+  flex: 1;
+  margin: 0 15px;
+  text-align: center;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.feature h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.feature p {
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+.feature .button {
+  padding: 10px 20px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.feature .button:hover {
+  background-color: #0056b3;
+}
+
+/* Solutions section (Vertex AI and Cloud Spanner) */
+.solutions-section {
+  display: flex;
+  justify-content: space-around;
+  padding: 50px 0;
+  background-color: #f4f4f4;
+  gap: 20px; /* Gap between solutions for better spacing */
+}
+
+.solution {
+  flex: 1;
+  margin: 0 15px;
+  text-align: center;
+}
+
+.solution img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.solution h3 {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+}
+
+.solution p {
+  font-size: 1rem;
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  .features-section,
+  .solutions-section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .feature,
+  .solution {
+    width: 100%; /* Full width for mobile */
+    max-width: none; /* Remove max-width restriction */
+    margin: 0; /* Remove side margins */
+    margin-bottom: 20px; /* Add space between stacked items */
+  }
+
+  .feature:last-child,
+  .solution:last-child {
+    margin-bottom: 0; /* Remove bottom margin for the last item */
+  }
+}

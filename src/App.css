@@ -1,0 +1,54 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.App {
+  text-align: center;
+}
+
+.hero-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-position: center;
+  background-size: cover;
+  color: white;
+  min-height: 50vh;
+}
+
+.hero-section .content {
+  text-align: center;
+  margin: 240px 0;
+}
+
+.content-section {
+  padding: 30px;
+}
+
+.content-section .row {
+  display: flex;
+  justify-content: space-around;
+}
+
+.content-section .col {
+  flex: 1;
+  margin: 20px;
+  text-align: center;
+}
+
+.explore-btn {
+  background-color: #000;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}

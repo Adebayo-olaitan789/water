@@ -1,0 +1,196 @@
+/* General header styles */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+    border-bottom: 1px solid #ccc;
+    font-family: 'Arial', sans-serif; /* Adjusted font */
+    background-color: #fff; /* White background for header */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .logo-section {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo {
+    height: 40px; /* Adjusted logo height to match */
+  }
+  
+  .site-title {
+    display: inline-block;
+    margin-left: 15px;
+    font-size: 1.4rem; /* Adjusted font size to look more prominent */
+    color: #333; /* Dark text */
+  }
+  
+  .nav-links {
+    display: flex;
+    align-items: center;
+  }
+  
+  .nav-item {
+    margin: 0 20px; /* Slightly more space between links */
+    text-decoration: none;
+    color: #333; /* Dark text color */
+    font-size: 1.2rem; /* Adjusted font size for links */
+    transition: color 0.3s ease;
+  }
+  
+  .nav-item:hover {
+    color: #000; /* Change to black on hover for better visual feedback */
+  }
+  
+  /* Hamburger menu */
+  .hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+  }
+  
+  .hamburger .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #333; /* Dark bars for hamburger */
+    margin: 4px 0;
+    transition: all 0.3s ease;
+  }
+  
+  .hamburger .bar.open {
+    background-color: #000;
+  }
+  
+  .mobile-menu-open {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* Styles for the username and logout popup */
+.username-container {
+  position: relative;
+  display: inline-block;
+}
+
+.username {
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #f0f0f0;
+  transition: background-color 0.3s ease;
+}
+
+.username:hover {
+  background-color: #e0e0e0;
+}
+
+.logout-popup {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 100%;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  padding: 10px;
+  white-space: nowrap;
+}
+
+.logout-popup.show {
+  display: block;
+}
+
+.logout-button {
+  background-color: #d9534f;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-left: 10px;
+}
+
+/* Dropdown Menu */
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  min-width: 150px;
+  z-index: 1000;
+  
+}
+
+.dropdown-item {
+  display: block;
+  padding: 10px 20px;
+  color: #333;
+  text-align: left;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.dropdown-item:hover {
+  background-color: #f8f9fa;
+}
+
+
+.logout-button:hover {
+  background-color: #c9302c;
+}
+
+  
+  @media (max-width: 768px) {
+    .nav-links {
+      display: none;
+    }
+  
+    .hamburger {
+      display: flex;
+    }
+  
+    .mobile-menu-open {
+      display: flex;
+    }
+  
+    .nav-links.mobile-menu-open {
+      position: absolute;
+      top: 60px;
+      right: 0;
+      background-color: white;
+      border: 1px solid #ccc;
+      flex-direction: column;
+      width: 100%;
+      padding: 10px;
+    }
+  
+    .nav-item {
+      margin: 10px 0;
+    }
+  }
+  
+  /* Adjustments for mobile responsiveness */
+  @media (max-width: 576px) {
+    .site-title {
+      font-size: 1.2rem; /* Slightly smaller title on small screens */
+    }
+  
+    .nav-item {
+      font-size: 1.1rem; /* Adjusted link font size for mobile */
+      margin: 15px 0;
+    }
+  
+    .hamburger .bar {
+      width: 22px; /* Smaller bars on mobile */
+      height: 2.5px;
+    }
+  }
+  

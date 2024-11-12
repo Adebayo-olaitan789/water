@@ -1,0 +1,66 @@
+.login-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Get Started section */
+.get-started-section {
+  word-break: break-word;
+  flex-grow: 1;
+  text-align: center;
+  font-size: 25px;
+  margin: 50px 0;
+}
+
+/* Image styling */
+.image-container {
+  width: 50%; /* Adjust based on your design */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Login section styling */
+.login-section {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  text-align: center;
+}
+
+.login-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+/* Mobile screen adjustments */
+@media only screen and (max-width: 768px) {
+  .login-container {
+    flex-direction: column;
+  }
+
+  .image-container {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .login-section {
+    width: 100%;
+  }
+}
